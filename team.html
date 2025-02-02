@@ -44,8 +44,9 @@
     }
 
     .team-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 20px;
       max-width: 1000px;
       margin: auto;
@@ -57,6 +58,8 @@
       border-radius: 10px;
       box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
       text-align: center;
+      flex: 1 1 250px;
+      max-width: 250px;
     }
 
     .team-member img {
@@ -64,7 +67,8 @@
       height: 200px;
       border-radius: 10px;
       object-fit: cover;
-      margin-bottom: 10px;
+      display: block;
+      margin: 0 auto;
     }
 
     .team-member h2 {
@@ -75,6 +79,15 @@
     .team-member p {
       font-size: 16px;
       color: #555;
+    }
+
+    .team-member a {
+      text-decoration: none;
+      color: #0056b3;
+    }
+
+    .team-member a:hover {
+      color: #003f7f;
     }
   </style>
 </head>
@@ -96,7 +109,7 @@
     <div class="team-grid">
       <div class="team-member">
         <a href="https://www.linkedin.com/in/jordan-small-415975206/" target="_blank">
-          <img src="JordanSmall.jpeg" alt="Team Member 1">
+          <img src="JordanSmall.jpeg" alt="Jordan Small">
           <h2>Jordan Small</h2>
         </a>
         <p>Doctor of Veterinary Medicine</p>
@@ -104,7 +117,7 @@
 
       <div class="team-member">
         <a href="https://www.linkedin.com/in/jscoh/" target="_blank">
-          <img src="Jordan Owens-hall.jpg" alt="Team Member 2">
+          <img src="Jordan Owens-hall.jpg" alt="Jordan Owens-Hall">
           <h2>Jordan Owens-Hall</h2>
         </a>
         <p>Masters of Public Health</p>
@@ -112,7 +125,7 @@
 
       <div class="team-member">
         <a href="https://www.linkedin.com/in/george-maidhof/" target="_blank">
-          <img src="gpm58.jpg" alt="Team Member 3">
+          <img src="gpm58.jpg" alt="George Maidhof">
           <h2>George Maidhof</h2>
         </a>
         <p>Masters of Electrical and Computer Engineering</p>
@@ -120,7 +133,7 @@
 
       <div class="team-member">
         <a href="https://www.linkedin.com/in/samruddhishinde6/" target="_blank">
-          <img src="srs436@cornell.edu-b4d26a45.jpg" alt="Team Member 4">
+          <img src="srs436@cornell.edu-b4d26a45.jpg" alt="Samruddhi Shinde">
           <h2>Samruddhi Shinde</h2>
         </a>
         <p>Masters of Engineering Management</p>
@@ -128,7 +141,7 @@
 
       <div class="team-member">
         <a href="https://www.linkedin.com/in/eunice-yi-61b795265/" target="_blank">
-          <img src="EuniceYi.jpeg" alt="Team Member 5">
+          <img src="EuniceYi.jpeg" alt="Eunice Yi">
           <h2>Eunice Yi</h2>
         </a>
         <p>BS Human Development</p>
@@ -136,7 +149,7 @@
 
       <div class="team-member">
         <a href="https://www.linkedin.com/in/benjamin-loong/" target="_blank">
-          <img src="BenjaminLoongHeadshot.JPG" alt="Team Member 6">
+          <img src="BenjaminLoongHeadshot.JPG" alt="Ben Loong">
           <h2>Ben Loong</h2>
         </a>
         <p>BS Human Biology Health and Society</p>
