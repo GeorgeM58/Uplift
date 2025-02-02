@@ -52,9 +52,33 @@
       padding: 20px;
       margin: 20px auto;
       width: 80%;
-      max-width: 600px;
+      max-width: 800px;
       border-radius: 10px;
       box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: left;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th,
+    td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #007BFF;
+      color: white;
+    }
+
+    .total-row {
+      font-weight: bold;
+      background-color: #e0e0e0;
     }
   </style>
 </head>
@@ -72,17 +96,65 @@
 
   <div class="container">
     <h1>Materials and Design</h1>
+
     <div class="material">
       <h2>Materials</h2>
-      <p></p>
+      <table>
+        <tr>
+          <th>Component</th>
+          <th>Estimate (USD)</th>
+        </tr>
+        <tr>
+          <td>Frame (Steel)</td>
+          <td>$70</td>
+        </tr>
+        <tr>
+          <td>Ball Bearing Wheels</td>
+          <td>$40</td>
+        </tr>
+        <tr>
+          <td>Neoprene Sling & Straps</td>
+          <td>$30</td>
+        </tr>
+        <tr>
+          <td>Fasteners (Bolts, Nuts, Washers, Hinges)</td>
+          <td>$10</td>
+        </tr>
+        <tr>
+          <td>Adjustable Support System</td>
+          <td>$20</td>
+        </tr>
+        <tr>
+          <td>Labor / Assembly Cost (if outsourced)</td>
+          <td>$30</td>
+        </tr>
+        <tr class="total-row">
+          <td>Total Cost Estimate</td>
+          <td>$200</td>
+        </tr>
+      </table>
     </div>
+
     <div class="material">
-      <h2>2D Design:</h2>
-      <p></p>
+      <h2>Material Details</h2>
+      <p><strong>Wheels (Casters):</strong> Rubber or polyurethane with a metal core, 3-5 inch wheels with a locking
+        mechanism. Estimated cost per wheel: $5–$10, total cost for four wheels: $20–$40.</p>
+      <p><strong>Steel Frame:</strong> Mild Steel (~$2–$3/kg, $20–$45 total) or Stainless Steel (~$4–$6/kg, $40–$90
+        total). Estimated weight per unit: ~10–15 kg.</p>
+      <p><strong>Sling (Fabric & Padding):</strong> Options include Nylon, Polyester, or Mesh for durability and
+        comfort. Additional memory foam padding for high-end models. Estimated cost: $10–$25 per unit.</p>
+      <p><strong>Fasteners & Coating:</strong> Includes bolts, nuts, washers, welding materials, and powder coating.
+        Estimated cost: $10–$20.</p>
     </div>
+
     <div class="material">
-      <h2>Proto-type</h2>
-      <p></p>
+      <h2>2D Design</h2>
+      <p>Details and diagrams will be added here.</p>
+    </div>
+
+    <div class="material">
+      <h2>Prototype</h2>
+      <p>Information about our prototype development process.</p>
     </div>
   </div>
 
